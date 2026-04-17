@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ======================== GLOBAIS ======================== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-font: normal normal 1em "Open Sans", Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font: var(--main-font);
+}
+
+
+header {
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    place-items: center center;
+}
+
+#calculator {
+    display: grid;
+    gap: 1em;
+    padding: 2em;
+    background-color: gray;
+    border-radius: 2em;
+    box-shadow: 0cqi;
+}
+
+input {
+    height: 50px;
+    padding: 0.5em;
+    font-size: 1.2em;
+    text-align: right;
+    border-radius: 1em;
+    border: 1px solid black;
+}
+
+#btnArea {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+button {
+    padding: 1em;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
