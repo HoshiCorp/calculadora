@@ -18,6 +18,7 @@
     --primary-color: #9aafd8;
     --primary-color-light: #d5e2fd;
     --secondary-color: #f13f24;
+    --tertiary-color: #edb92f;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
 }
 
 
+/* ================== HEADER ================== */
 header {
     padding: 1em;
 }
@@ -36,24 +38,84 @@ h1 {
     text-align: center;
 }
 
+
+/* ================== MAIN ================== */
 main {
     display: grid;
     place-items: center center;
     padding: 0.5em;
 }
 
+
+/* ================== CALCULADORA ================== */
 #calculator {
+    position: relative;
+    margin: 1em 0;
+    display: grid;
+    place-items: center;
+}
+
+/* =========== COROA =========== */
+#crown {
+    height: auto;
+    width: auto;
+}
+
+/* Parte de baixo */
+#bottom {
+    width: 100%;
+}
+
+#strip {
+    height: 10px;
+    background-color: var(--tertiary-color);
+}
+
+#base {
+    height: 7.5px;
+    background-color: var(--secondary-color);
+}
+
+/* Parte de cima */
+#top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#triangleLeft {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid var(--secondary-color);
+    border-right: 40px solid transparent;
+}
+
+#triangleMid {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid var(--secondary-color);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+#triangleRight {
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid var(--secondary-color);
+    border-left: 40px solid transparent;
+}
+
+
+/* =========== BOTÕES E VISOR =========== */
+#calculatorWrapper {
     display: grid;
     gap: 1em;
-    margin: 1em 0;
     padding: 2em;
     background-color: var(--primary-color);
     border-radius: 2em;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transform-style: preserve-3d;
 }
 
+/* Visor */
 input {
     height: 50px;
     width: 100%;
@@ -64,6 +126,7 @@ input {
     border: 1px solid black;
 }
 
+/* Área dos botões */
 #btnArea {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

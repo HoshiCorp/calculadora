@@ -14,38 +14,58 @@
     </header>
     <main>
 
+        <!-- ================== Calculadora ================== -->
         <div id="calculator">
-            <div id="crown"></div>
 
-            <div id="visor">
-                <input type="text" name="numArea" id="numArea" readonly>
+            <!-- Coroa -->
+            <div id="crown">
+                <div id="top">
+                    <div id="triangleLeft"></div>
+                    <div id="triangleMid"></div>
+                    <div id="triangleRight"></div>
+                </div>
+
+                <div id="bottom">
+                    <div id="base"></div>
+                    <div id="strip"></div>
+                </div>
             </div>
             
-            <div id="btnArea">
-                <button id="backspaceBtn">←</button>
-                <button id="clearBtn">C</button>
-                <button id="parenthesesBtn">()</button>
-                <button id="divisionBtn">÷</button>
+            <!-- Itens da calculadora -->
+            <div id="calculatorWrapper">
 
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button id="multBtn">x</button>
+                <!-- Visor -->
+                <div id="visor">
+                    <input type="text" name="numArea" id="numArea" readonly>
+                </div>
+                
+                <!-- Botões-->
+                <div id="btnArea">
+                    <button id="backspaceBtn">←</button>
+                    <button id="clearBtn">C</button>
+                    <button id="parenthesesBtn">()</button>
+                    <button id="divisionBtn">÷</button>
 
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button id="minusBtn">-</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button id="multBtn">x</button>
 
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button id="addBtn">+</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button id="minusBtn">-</button>
 
-                <button id="sinalBtn">+/-</button>
-                <button>0</button>
-                <button id="commaBtn">,</button>
-                <button id="equalBtn">=</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button id="addBtn">+</button>
+                    
+                    <button id="sinalBtn">+/-</button>
+                    <button>0</button>
+                    <button id="commaBtn">,</button>
+                    <button id="equalBtn">=</button>
+                </div>
             </div>
         </div>
 
