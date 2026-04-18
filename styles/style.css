@@ -15,10 +15,19 @@
     --numbers-font: normal normal 1.2em "Oxanium", Arial, sans-serif;
 
     /* ================== CORES ================== */
+    --primary-color-dark: #7787a8;
     --primary-color: #9aafd8;
-    --primary-color-light: #d5e2fd;
-    --secondary-color: #f13f24;
-    --tertiary-color: #edb92f;
+    --primary-color-light1: #d5e2fd;
+    --primary-color-light2: #d5f1ff;
+    --secondary-color: #ea7765;
+    --secondary-color-light: #fab3a8;
+    --tertiary-color: #ebcc78;
+    --tertiary-color-light: #f0deac;
+
+    --white: #f2f2f2;
+
+    /* ================== TRANSITIONS ================== */
+    --btn-transition: background-color 0.2s ease-in-out;
 }
 
 body {
@@ -124,6 +133,7 @@ input {
     text-align: right;
     border-radius: 1em;
     border: 1px solid black;
+    cursor: auto;
 }
 
 /* Área dos botões */
@@ -137,6 +147,42 @@ button {
     padding: 0.75em;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+    border: solid transparent;
     font: var(--numbers-font);
-    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--btn-transition);
+}
+
+button:active {
+    border: 0.15em solid var(--primary-color);
+}
+
+button.inputs{
+    background-color: var(--primary-color-light1);
+}
+
+button.operators {
+    background-color: var(--primary-color-light2);
+}
+
+button.utils {
+    background-color: var(--secondary-color-light);
+}
+
+button#equalBtn {
+    background-color: var(--tertiary-color);
+}
+
+button.inputs:hover, button.operators:hover {
+    background-color: var(--white);
+
+}
+
+button.utils:hover {
+    background-color: var(--tertiary-color-light);
+}
+
+button#equalBtn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
 }
