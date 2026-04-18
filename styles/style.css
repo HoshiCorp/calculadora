@@ -19,7 +19,7 @@
     --primary-color: #9aafd8;
     --primary-color-light1: #d5e2fd;
     --primary-color-light2: #d5f1ff;
-    --secondary-color: #ea7765;
+    --secondary-color: #ea715f;
     --secondary-color-light: #fab3a8;
     --tertiary-color: #ebcc78;
     --tertiary-color-light: #f0deac;
@@ -45,6 +45,7 @@ header {
 
 h1 {
     text-align: center;
+    font-size: 1.5em;
 }
 
 
@@ -185,4 +186,32 @@ button.utils:hover {
 button#equalBtn:hover {
     background-color: var(--secondary-color);
     color: var(--white);
+}
+
+
+/* ================== FOOTER ================== */
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 3.5em 2em 2em 2em;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+footer h2 {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--tertiary-color);
+    text-decoration: underline;
 }
