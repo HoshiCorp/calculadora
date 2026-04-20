@@ -176,7 +176,6 @@ button#equalBtn {
 
 button.inputs:hover, button.operators:hover {
     background-color: var(--white);
-
 }
 
 button.utils:hover {
